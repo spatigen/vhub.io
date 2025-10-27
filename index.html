@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>[ICCV 2025] STI-Bench: Are MLLMs Ready for Precise Spatial-Temporal World Understanding?</title>
+    <title>V-HUB: A VISUAL-CENTRIC HUMOR UNDERSTANDING BENCHMARK FOR VIDEO LLMS</title>
     <!-- 引入 Font Awesome 图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- 引入 Academicons 图标库 -->
@@ -672,23 +672,26 @@
             <span class="highlight">STI-Bench</span> : Are MLLMs Ready for <br> Precise Spatial-Temporal World Understanding? (ICCV 2025)
           </h1>
           <p class="publication-authors">
-            <span class="author-name">Yun Li</span><sup>1,2</sup>, 
-            <span class="author-name">Yiming Zhang</span><sup>1,3</sup>, 
-            <span class="author-name">Tao Lin</span><sup>1</sup>, 
-            <span class="author-name">XiangRui Liu</span><sup>1,4</sup>, 
-            <span class="author-name">Wenxiao Cai</span><sup>5</sup>, 
-            <span class="author-name">Zheng Liu</span><sup>4</sup>, 
-            <span class="author-name">Bo Zhao</span><sup>1</sup><br>
-            <span class="author-affiliation"><sup>1</sup>School of AI, Shanghai Jiao Tong University;</span> 
-            <span class="author-affiliation"><sup>2</sup>China University of Geosciences;</span> 
-            <span class="author-affiliation"><sup>3</sup>Nanyang Technological University;</span> 
-            <span class="author-affiliation"><sup>4</sup>BAAI;</span> 
-            <span class="author-affiliation"><sup>5</sup>Stanford University;</span>
+            <span class="author-name">Zhengpeng Shi</span><sup>1,4</sup>, 
+            <span class="author-name">Hengli Li</span><sup>2,4</sup>, 
+            <span class="author-name">Yanpeng Zhao</span><sup>4</sup>, 
+            <span class="author-name">Jianqun Zhou</span><sup>3,4</sup>, 
+            <span class="author-name">Yuxuan Wang</span><sup>5</sup>, 
+            <span class="author-name">Qinrong Cui</span><sup>5</sup>, 
+            <span class="author-name">Wei Bi</span><sup>5</sup>,
+            <span class="author-name">Songchun Zhu</span><sup>4</sup>, 
+            <span class="author-name">Bo Zhao</span><sup>1</sup>, 
+            <span class="author-name">Zilong Zheng</span><sup>4</sup><br>
+            <span class="author-affiliation"><sup>1</sup>Shanghai Jiao Tong University;</span> 
+            <span class="author-affiliation"><sup>2</sup>Peking University;</span> 
+            <span class="author-affiliation"><sup>3</sup>Wuhan University;</span> 
+            <span class="author-affiliation"><sup>4</sup>Beijing Institute for General Artificial Intelligence;</span> 
+            <span class="author-affiliation"><sup>5</sup>Independent Researcher;</span>
           </p>
         </div>
             <div class="publication-links">
                 <span class="link-block">
-                    <a href="https://arxiv.org/abs/2503.23765" target="_blank">
+                    <a href="https://arxiv.org/pdf/2509.25773" target="_blank">
                         <span class="icon"><i class="ai ai-arxiv"></i></span> arXiv
                     </a>
                 </span>
@@ -712,30 +715,6 @@
             </div>
         </div>
   
-<div class="publication-links" style="text-align:center; margin-top: 10px;">
-        <span class="link-block">
-            <a href="https://mp.weixin.qq.com/s/yIRoyI1HbChLZv4GuvI7BQ" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon"><i class="fab fa-weixin"></i></span>
-                <span>量子位</span>
-            </a>
-        </span>
-            <span class="link-block">
-            <a href="https://mp.weixin.qq.com/s/pVytCfXmcG-Wkg-sOHk_BA" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                <span class="icon"><i class="fab fa-weixin"></i></span>
-                <span>PaperWeekly</span>
-            </a>
-        </span>
-        <span class="link-block">
-            <a href="https://app.xinhuanet.com/news/article.html?articleId=8af447763b11efc491455eb93a27eac0" target="_blank" class="external-link button is-normal is-rounded is-dark">
-<span class="icon">
-  <img src="assets/images/favicon.ico" alt="新华网" style="height: 1em;">
-</span>
-                <span>新华网</span>
-            </a>
-        </span>
-    </div>
-    </section>
-  
     <!-- Logo Section -->
     <section class="logo-section">
         <div class="container">
@@ -750,8 +729,7 @@
         <div class="container">
             <h2>Abstract</h2>
             <p>
-                The use of Multimodal Large Language Models (MLLMs) as an end-to-end solution for Embodied AI and Autonomous Driving has become a prevailing trend. While MLLMs have been extensively studied for visual semantic understanding tasks, their ability to perform precise and quantitative spatial-temporal understanding in real-world applications remains largely unexamined, leading to uncertain prospects. To evaluate models' Spatial-Temporal Intelligence, we introduce STI-Bench, a benchmark designed to evaluate MLLMs' spatial-temporal understanding through challenging tasks such as estimating and predicting the appearance, pose, displacement, and motion of objects. Our benchmark encompasses a wide range of robot and vehicle operations across desktop, indoor, and outdoor scenarios. 
-                The extensive experiments reveals that the state-of-the-art MLLMs still struggle in real-world spatial-temporal understanding, especially in tasks requiring precise distance estimation and motion analysis. 
+                AI models capable of comprehending humor hold real-world promise—for example, enhancing engagement in human-machine interactions. To gauge and diagnose the capacity of multimodal large language models (MLLMs) for humor understanding, we introduce v-HUB, a novel visual-centric video humor understanding benchmark. v-HUB comprises a curated collection of minimally verbal short videos, sourced from classic silent films and online resources, and reflecting real-world scenarios where humor can be appreciated purely through visual cues. Each video clip is paired with rich annotations, including captions, descriptions, and explanations, supporting evaluation tasks like caption matching and humor explanation. To broaden its applicability, we further construct an open-ended video QA task, making it readily integrable into existing video understanding benchmarks. We evaluate a diverse set of MLLMs, from specialized Video-LLMs to versatile OmniLLMs that can process audio, covering both open-source and proprietary domains. The experimental results expose the difficulties MLLMs face in comprehending humor from visual cues alone. For example, all models exhibit a marked performance drop on caption matching when moving from text-based to video-based evaluation (without audio). Our findings also demonstrate that incorporating audio helps with video humor understanding, highlighting the informativeness of sound and the promise of integrating richer modalities for complex video understanding tasks.
             </p>
         </div>
     </section>
@@ -798,195 +776,6 @@
         </div>
     </section>
 
-    <!-- Leaderboard Section -->
-    <section class="leaderboard-section">
-        <div class="container">
-            <h2 class="leaderboard-title">Leaderboard</h2>
-            <p class="description">
-                Click on column headers to sort. All scores are accuracy (%). @&lt;n&gt;f  denotes n input frames per video.
-            </p>
-          
-            <table id="leaderboard">
-                <thead>
-                    <tr>
-                        <th rowspan="2" class="rank-header">Rank</th>
-                        <th rowspan="2" class="method-header sortable" data-column-index="1">Method</th>
-                        <th rowspan="2" class="avg-header sortable" data-column-index="2">Avg.<span class="sort-indicator"></span></th>
-                        <th colspan="3">Static Understanding</th>
-                        <th colspan="5">Dynamic Understanding</th>
-                    </tr>
-                    <tr>
-                        <th class="task-header sortable" data-column-index="3">Dimensional<br>Measurement<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="4">Spatial<br>Relation<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="5">3D Video<br>Grounding<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="6">Displacement<br>Path Length<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="7">Speed &<br>Acceleration<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="8">Ego-Centric<br>Orientation<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="9">Trajectory<br>Description<span class="sort-indicator"></span></th>
-                        <th class="task-header sortable" data-column-index="10">Pose<br>Estimation<span class="sort-indicator"></span></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://deepmind.google/technologies/gemini/" target="_blank">Gemini-2.5-Pro</a><span class="frame-count">@30f</span></td>
-                        <td>41.4</td>
-                        <td>38.7</td>
-                        <td>53.8</td>
-                        <td>36.9</td>
-                        <td>33.9</td>
-                        <td>33.1</td>
-                        <td>52.5</td>
-                        <td>47.4</td>
-                        <td>50.4</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct" target="_blank">Qwen2.5-VL-72B</a><span class="frame-count">@30f</span></td>
-                        <td>40.7</td>
-                        <td>31.5</td>
-                        <td>47.6</td>
-                        <td>39.1</td>
-                        <td>25.1</td>
-                        <td>38.4</td>
-                        <td>43.8</td>
-                        <td>51.3</td>
-                        <td>60.6</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://www.anthropic.com/news/claude-3-7-sonnet" target="_blank">Claude-3.7-Sonnet</a><span class="frame-count">@20f</span></td>
-                        <td>40.5</td>
-                        <td>29.8</td>
-                        <td>45.5</td>
-                        <td>35.7</td>
-                        <td>28.9</td>
-                        <td>38.8</td>
-                        <td>40.0</td>
-                        <td>47.4</td>
-                        <td>62.6</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://deepmind.google/technologies/gemini/" target="_blank">Gemini-2.0-Flash</a><span class="frame-count">@30f</span></td>
-                        <td>38.7</td>
-                        <td>31.9</td>
-                        <td>50.0</td>
-                        <td>31.8</td>
-                        <td>27.7</td>
-                        <td>32.1</td>
-                        <td>10.8</td>
-                        <td>38.5</td>
-                        <td>61.3</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://github.com/OpenGVLab/InternVL" target="_blank">InternVL2.5-78B</a><span class="frame-count">@30f</span></td>
-                        <td>38.5</td>
-                        <td>29.9</td>
-                        <td>52.8</td>
-                        <td>31.6</td>
-                        <td>24.9</td>
-                        <td>37.2</td>
-                        <td>49.2</td>
-                        <td>43.6</td>
-                        <td>53.6</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2-7B_res448" target="_blank">VideoChat-Flash</a><span class="frame-count">@30f</span></td>
-                        <td>36.3</td>
-                        <td>33.6</td>
-                        <td>51.4</td>
-                        <td>33.1</td>
-                        <td>27.1</td>
-                        <td>32.3</td>
-                        <td>22.2</td>
-                        <td>54.2</td>
-                        <td>51.4</td>
-                    </tr>
-                     <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://github.com/DAMO-NLP-SG/VideoLLaMA3" target="_blank">VideoLLaMA3-7B</a><span class="frame-count">@30f</span></td>
-                        <td>35.2</td>
-                        <td>29.4</td>
-                        <td>48.6</td>
-                        <td>36.1</td>
-                        <td>21.5</td>
-                        <td>36.7</td>
-                        <td>23.2</td>
-                        <td>54.6</td>
-                        <td>48.1</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://openai.com/index/hello-gpt-4o/" target="_blank">GPT-4o</a><span class="frame-count">@30f</span></td>
-                        <td>34.8</td>
-                        <td>27.1</td>
-                        <td>51.8</td>
-                        <td>29.0</td>
-                        <td>23.2</td>
-                        <td>35.4</td>
-                        <td>33.7</td>
-                        <td>32.0</td>
-                        <td>53.6</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://arxiv.org/abs/2504.06958" target="_blank">VideoChat-R1</a><span class="frame-count">@30f</span></td>
-                        <td>32.8</td>
-                        <td>23.2</td>
-                        <td>47.3</td>
-                        <td>31.5</td>
-                        <td>22.4</td>
-                        <td>31.1</td>
-                        <td>26.0</td>
-                        <td>47.9</td>
-                        <td>48.3</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://github.com/OpenBMB/MiniCPM-V" target="_blank">MiniCPM-V-2.6</a><span class="frame-count">@30f</span></td>
-                        <td>26.9</td>
-                        <td>27.7</td>
-                        <td>44.5</td>
-                        <td>29.0</td>
-                        <td>19.0</td>
-                        <td>25.7</td>
-                        <td>7.0</td>
-                        <td>30.8</td>
-                        <td>35.6</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct" target="_blank">Kimi-VL-A3B-Instruct</a><span class="frame-count">@16f</span></td>
-                        <td>34.2</td>
-                        <td>32.9</td>
-                        <td>17.8</td>
-                        <td>27.1</td>
-                        <td>30.2</td>
-                        <td>28.7</td>
-                        <td>46.5</td>
-                        <td>33.3</td>
-                        <td>51.1</td>
-                    </tr>
-                    <tr>
-                        <td class="rank-col"></td>
-                        <td class="model-name"><a href="https://arxiv.org/abs/2504.01805" target="_blank">SpaceR</a><span class="frame-count">@32f</span></td>
-                        <td>37.0</td>
-                        <td>34.1</td>
-                        <td>34.9</td>
-                        <td>23.0</td>
-                        <td>35.6</td>
-                        <td>36.3</td>
-                        <td>35.5</td>
-                        <td>63.2</td>
-                        <td>49.8</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
   
     <!-- Tabs Section -->
     <section class="tabs-section">
@@ -1051,7 +840,7 @@
     <!-- Pipeline Section -->
     <section class="pipeline-section">
         <div class="container">
-            <h2>Pipeline</h2>
+            <h2>Data Curation Pipeline</h2>
             <div class="image-container">
                 <img src="assets/images/pipeline.jpg" alt="Pipeline" class="full-width-image">
             </div>
@@ -1241,7 +1030,7 @@
         <div class="container">
             <h2>Conclusion</h2>
             <p>
-                We introduced STI-Bench, a comprehensive benchmark to assess MLLMs’ spatial-temporal understanding through over 300 real-world videos and 2,000 QA pairs of robot desktop, indoor, and outdoor scenarios, which reveals significant limitations in current MLLMs' spatial-temporal understanding capabilities, with even the top-performing models achieving no more than 50% accuracy. Models particularly struggle with precise quantitative tasks like dimensional measurement. Our analysis identifies three key weaknesses: inaccurate spatial quantification, flawed temporal dynamics understanding, and weak cross-modal integration. These findings emphasize the substantial gap between current capabilities and the reliability needed for embodied AI and autonomous driving applications. STI-Bench provides a valuable framework for evaluating and improving MLLMs' ability to understand the physical world—essential for developing the next generation of embodied intelligent systems.            </p>
+                We have introduced v-HUB, a visual-centric humor understanding benchmark. v-HUB is designed to assess and diagnose the capability of MLLMs for video humor understanding. It contains a collection of funny videos collected from two complementary domains. Each clip is annotated with captions, descriptions, explanations, etc., supporting evaluation tasks such as caption matching and humor explanation. To broaden the applicability of v-HUB, we further construct an open-ended task, contributing to a comprehensive evaluation of MMLMs for video understanding. We evaluated a diverse range of MMLMs, spanning open-sourced and proprietary domains and covering specialized video LLMs and versatile OmniLLMs. Our findings reveal that current MLLMs heavily rely on linguistic cues for humor understanding, but are weak in deriving nuanced visual cues for understanding sophisticated video humor. Moreover, we empirically find that including audio is helpful for humor understanding, highlighting the informativeness of sound and the promise of incorporating rich modalities for complex video reasoning tasks.
         </div>
     </section>
   
