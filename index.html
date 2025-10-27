@@ -696,7 +696,7 @@
                     </a>
                 </span>
                 <span class="link-block">
-                    <a href="https://huggingface.co/datasets/MINT-SJTU/STI-Bench" target="_blank">
+                    <a href="https://huggingface.co/datasets/Foreverskyou/v-HUB" target="_blank">
 <span class="icon">
   <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" style="height: 1em;">
 </span>
@@ -705,7 +705,7 @@
                     </a>
                 </span>
                 <span class="link-block">
-                <a href="https://github.com/MINT-SJTU/STI-Bench" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/spatigen/vhub" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
                     </span>
@@ -719,7 +719,7 @@
     <section class="logo-section">
         <div class="container">
             <div class="image-container">
-                <img src="assets/images/cover_01.png"  alt="Cover" class="full-width-image">
+                <img src="figures/teaser.png"  alt="Cover" class="full-width-image">
             </div>
         </div>
     </section>
@@ -733,49 +733,6 @@
             </p>
         </div>
     </section>
-  
-    <section class="demo-video-section">
-        <div class="container">
-            <h2>Demo Videos</h2>
-            <!-- 第一行视频 -->
-            <div class="video-container" style="justify-content: space-between;">
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/00001.mp4" type="video/mp4">
-                </video>
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/00010.mp4" type="video/mp4">
-                </video>
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/00020.mp4" type="video/mp4">
-                </video>
-            </div>
-            <!-- 第二行视频 -->
-            <div class="video-container" style="justify-content: space-between;">
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/1020365635352417945_7625_000_7645_000_camera_1.mp4" type="video/mp4">
-                </video>
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/1024360143612057520_3580_000_3600_000_camera_1.mp4" type="video/mp4">
-                </video>
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/10247954040621004675_2180_000_2200_000_camera_1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <!-- 第三行视频 -->
-            <div class="video-container" style="justify-content: space-between;">
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/scene0001_00.mp4" type="video/mp4">
-                </video>
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/scene0010_00.mp4" type="video/mp4">
-                </video>
-                <video controls autoplay muted loop style>
-                    <source src="assets/videos/scene0020_00.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
-
   
     <!-- Tabs Section -->
     <section class="tabs-section">
@@ -824,7 +781,7 @@
         <div class="container">
             <h2>Comparison</h2>
             <div class="image-container">
-                <img src="assets/images/comparison.jpg" alt="Comparison" class="full-width-image">
+                <img src="figures/comparison.png" alt="Comparison" class="full-width-image">
             </div>
             <p>
                 <strong>Comparison of STI-Bench with existing benchmarks.</strong> 
@@ -842,7 +799,7 @@
         <div class="container">
             <h2>Data Curation Pipeline</h2>
             <div class="image-container">
-                <img src="assets/images/pipeline.jpg" alt="Pipeline" class="full-width-image">
+                <img src="figures/pipeline.png" alt="Pipeline" class="full-width-image">
             </div>
             <p><strong>I. Data Collection</strong> Collected data from Desktop, Indoor, and Outdoor scenarios using Omni6DPose for 6D object pose estimation, ScanNet for indoor 3D scene reconstruction, and Waymo for autonomous driving. These datasets provide frame-by-frame camera parameters and point clouds.</p>
             <p><strong>II. Automatic QA Pair Generation</strong> Generated QA pairs with MLLMs using detailed object descriptions and computed ground-truth information for each task. This process produced a diverse set of questions and challenging answer options.</p>
@@ -857,7 +814,7 @@
             <div style="display: flex; gap: 20px;">
                 <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
                     <div>
-                        <img src="assets/images/results.png" alt="Results" class="full-width-image">
+                        <img src="figures/result.png" alt="Results" class="full-width-image">
                     </div>
                     <div>
                         <p><strong>Main Results.</strong> The experimental results in indoor, outdoor, and desktop environments consistently demonstrate that MLLMs exhibit significant limitations in Dimensional Measurement and displacement & estimation tasks. Across all evaluated scenarios, these models achieve substantially lower performance compared to other spatial reasoning tasks, such as pose estimation, directional reasoning, and 3D video grounding. In particular, performance is uniformly low among all models tested, indicating a generalized deficiency in accurately perceiving and estimating distances and displacements, rather than shortcomings of specific model architectures.</p>
@@ -869,22 +826,6 @@
             </div>
         </div>
     </section>
-  
-    <!-- 如果有更多的结果测出来，那么文字放最底下 -->
-    <!-- <section class="results-section">
-        <div class="container">
-            <h2>Results</h2>
-            <div class="image-container" style="display: flex; justify-content: space-between; gap: 20px;">
-                <div style="flex: 1;">
-                    <img src="assets/images/results.png" alt="Results" class="full-width-image">
-                </div>
-                <div style="flex: 1;">
-                    <img src="assets/images/radar.png" alt="Radar" class="full-width-image">
-                </div>
-            </div>
-            <p><strong>Main Results.</strong> The experimental results in indoor, outdoor, and desktop environments consistently demonstrate that MLLMs exhibit significant limitations in Dimensional Measurement and displacement & estimation tasks. Across all evaluated scenarios, these models achieve substantially lower performance compared to other spatial reasoning tasks, such as pose estimation, directional reasoning, and 3D video grounding. In particular, performance is uniformly low among all models tested, indicating a generalized deficiency in accurately perceiving and estimating distances and displacements, rather than shortcomings of specific model architectures. </p>
-        </div>
-    </section> -->
   
     <!-- Analysis Section -->
     <section class="analysis-section">
@@ -951,13 +892,13 @@
             <div class="image-slider">
                 <div class="slides-container">
                     <div class="slide active" id="slide-0">
-                        <img src="assets/images/outdoor_example.jpg" alt="Example 1" class="full-width-image">
+                        <img src="figures/case study 1.jpg" alt="Example 1" class="full-width-image">
                     </div>
                     <div class="slide" id="slide-1">
-                        <img src="assets/images/indoor_example.jpg" alt="Example 2" class="full-width-image">
+                        <img src="figures/case study 2.jpg" alt="Example 2" class="full-width-image">
                     </div>
                     <div class="slide" id="slide-2">
-                        <img src="assets/images/desktop_example.jpg" alt="Example 3" class="full-width-image">
+                        <img src="figures/case study 3.jpg" alt="Example 3" class="full-width-image">
                     </div>
                 </div>
                 <div class="slider-controls">
