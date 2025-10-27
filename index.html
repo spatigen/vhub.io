@@ -740,8 +740,9 @@
             <h2>Tasks Definition</h2>
             <p>We have divided the questions into Static Understanding and Dynamic Understanding, and further give definitions to 8 different tasks.</p>
             <div class="task-tabs">
-                <button class="task-tab-button active" onclick="openTaskTab(event, 'Static')">Static Understanding</button>
-                <button class="task-tab-button" onclick="openTaskTab(event, 'Dynamic')">Dynamic Understanding</button>
+                <button class="task-tab-button active" onclick="openTaskTab(event, 'Static')">Caption Matching</button>
+                <button class="task-tab-button" onclick="openTaskTab(event, 'Dynamic')">Humor Explanation</button>
+                <button class="task-tab-button" onclick="openTaskTab(event, 'Dynamic')">Open-ended QA</button>
             </div>
   
             <div id="Static" class="task-tab-content">
@@ -772,6 +773,11 @@
                 <p><strong>Pose Estimation.</strong> Given the camera’s initial 3D pose, including position and orientation, estimates its pose at a specified point in the video using only the observed RGB data.<br>
                     <strong>Example:</strong> <em>“Given the initial pose of the camera, what is the camera’s pose at the requested time?”</em>
                 </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="figures/example.png" alt="Example" class="full-width-image">
             </div>
         </div>
     </section>
