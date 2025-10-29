@@ -561,6 +561,37 @@
         .analysis-section > .container > p:last-of-type {
             margin-bottom: 0;
         }
+        .license-section {
+            background-color: #ffffff;
+            padding: 40px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .license-section h1 {
+            font-size: 2.0em;
+            margin: 0 auto 20px;
+            /* margin-bottom: 20px; */
+            text-align: left;
+            color: #333;
+            margin-left: 120px;
+            /* 不再设置 max-width，由外层 .content-wrapper 控制 */
+        }
+
+        .license-block {
+            background-color: #eaeaea;
+            border-radius: 8px;
+            padding: 1.2rem;
+            font-size: 1.0em;
+            line-height: 1.6;
+            color: #333;
+            margin: 0 auto 20px; /* 居中，底部留空 */
+            max-width: 1200px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            text-align: left;
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: 'Courier New', Courier, monospace;
+        }
         .citation-section {
             background-color: #ffffff;
             padding: 40px 0;
@@ -592,31 +623,6 @@
             /* font-family: 'Times New Roman', Times, serif; */
             font-family: 'Courier New', Courier, monospace;
         }
-        
-        /* .citation-title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            color: #333;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 0.5rem;
-        }
-
-        .citation-block {
-            background-color: #eaeaea;
-            border-radius: 8px;
-            padding: 1.2rem;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            color: #333;
-            overflow-x: auto;
-            margin-top: 1rem;
-        }
-        .citation-block code {
-            white-space: pre-wrap;
-            display: block;
-        } */
         /* --- End Revised Rules --- */
 
        
@@ -852,6 +858,20 @@
             <p>We have introduced v-HUB, a visual-centric humor understanding benchmark. v-HUB is designed to assess and diagnose the capability of MLLMs for video humor understanding. It contains a collection of funny videos collected from two complementary domains. Each clip is annotated with captions, descriptions, explanations, etc., supporting evaluation tasks such as caption matching and humor explanation. To broaden the applicability of v-HUB, we further construct an open-ended task, contributing to a comprehensive evaluation of MMLMs for video understanding. We evaluated a diverse range of MMLMs, spanning open-sourced and proprietary domains and covering specialized video LLMs and versatile OmniLLMs. Our findings reveal that current MLLMs heavily rely on linguistic cues for humor understanding, but are weak in deriving nuanced visual cues for understanding sophisticated video humor. Moreover, we empirically find that including audio is helpful for humor understanding, highlighting the informativeness of sound and the promise of incorporating rich modalities for complex video reasoning tasks.</p>
         </div>
     </section>
+
+    <!--License Section-->
+  <section class="License" id="BibTeX">
+    <div class="license-section">
+            <h1>License</h1>
+            <div class="license-block">v-HUB is only used for academic research. Commercial use in any form is prohibited.
+It contains a collection of funny videos collected from two complementary domains.
+Therefore, the copyright of all videos belongs to the video owners.
+If there is any infringement in v-HUB, please email shi_zpeng@sjtu.edu.cn and we will remove it immediately.
+Without prior approval, you cannot distribute, publish, copy, disseminate, or modify v-HUB in whole or in part. 
+You must strictly comply with the above restrictions.
+</div>
+</div>
+</section>
 
     <!--BibTex citation -->
   <section class="section" id="BibTeX">
