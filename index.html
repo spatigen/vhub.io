@@ -561,8 +561,40 @@
         .analysis-section > .container > p:last-of-type {
             margin-bottom: 0;
         }
+        .citation-section {
+            background-color: #ffffff;
+            padding: 40px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .citation-section h1 {
+            font-size: 2.0em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+            /* 不再设置 max-width，由外层 .content-wrapper 控制 */
+        }
+
+        .citation-block {
+            background-color: #eaeaea;
+            border-radius: 8px;
+            padding: 1.2rem;
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #333;
+            margin: 0 auto 20px; /* 居中，底部留空 */
+            /* 移除 max-width，由 .content-wrapper 限制 */
+            overflow-x: auto;
+            white-space: pre-wrap;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .citation-block code {
+            white-space: pre-wrap;
+            display: block;
+        }
         
-        .citation-title {
+        /* .citation-title {
             font-size: 2rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
@@ -585,7 +617,7 @@
         .citation-block code {
             white-space: pre-wrap;
             display: block;
-        }
+        } */
         /* --- End Revised Rules --- */
 
        
@@ -725,10 +757,10 @@
              <div class="image-container">
                 <img src="figures/result.png" alt="Results" class="full-width-image">
             </div>
-                <p><strong>Main Results.</strong> Our results reveal several shortcomings of MMLMs:<br> 
-               <strong>(I) They struggle to identify humorous elements when explicit cues are absent.</strong><br>
-               <strong>(II) They inadequately fuse information across modalities for understanding.</strong><br>
-               <strong>(III) They show limited capacity for inferring subtle humor.</strong></p>
+               <p>Our results reveal several shortcomings of MMLMs:<br> 
+               <strong>I. They struggle to identify humorous elements when explicit cues are absent.</strong><br>
+               <strong>II. They inadequately fuse information across modalities for understanding.</strong><br>
+               <strong>III. They show limited capacity for inferring subtle humor.</strong></p>
         </div>
     </section>
   
