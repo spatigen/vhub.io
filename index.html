@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>V-HUB: A VISUAL-CENTRIC HUMOR UNDERSTANDING BENCHMARK FOR VIDEO LLMS</title>
+    <title>v-HUB: A Benchmark for Video Humor Understanding from Vision and Sound</title>
     <!-- 引入 Font Awesome 图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- 引入 Academicons 图标库 -->
@@ -635,21 +635,19 @@
             <span class="highlight">V-HUB</span> : A VISUAL-CENTRIC HUMOR UNDERSTANDING BENCHMARK FOR VIDEO LLMS
           </h1>
           <p class="publication-authors">
-            <span class="author-name">Zhengpeng Shi</span><sup>1,4 *</sup>, 
-            <span class="author-name">Hengli Li</span><sup>2,4 *</sup>, 
-            <span class="author-name">Yanpeng Zhao</span><sup>4 † ✉</sup>, 
-            <span class="author-name">Jianqun Zhou</span><sup>3,4</sup>, 
-            <span class="author-name">Yuxuan Wang</span><sup>5</sup>, 
-            <span class="author-name">Qinrong Cui</span><sup>5</sup>, 
-            <span class="author-name">Wei Bi</span><sup>5</sup>,
-            <span class="author-name">Songchun Zhu</span><sup>4</sup>, 
+            <span class="author-name">Zhengpeng Shi</span><sup>1,3 *</sup>, 
+            <span class="author-name">Yanpeng Zhao</span><sup>3 † ✉</sup>, 
+            <span class="author-name">Jianqun Zhou</span><sup>2,3</sup>, 
+            <span class="author-name">Yuxuan Wang</span><sup>4</sup>, 
+            <span class="author-name">Qinrong Cui</span><sup>4</sup>, 
+            <span class="author-name">Wei Bi</span><sup>4</sup>,
+            <span class="author-name">Songchun Zhu</span><sup>3</sup>, 
             <span class="author-name">Bo Zhao</span><sup>1 ✉</sup>, 
-            <span class="author-name">Zilong Zheng</span><sup>4 ✉</sup><br>
+            <span class="author-name">Zilong Zheng</span><sup>3 ✉</sup><br>
             <span class="author-affiliation"><sup>1</sup>Shanghai Jiao Tong University;</span> 
-            <span class="author-affiliation"><sup>2</sup>Peking University;</span> 
-            <span class="author-affiliation"><sup>3</sup>Wuhan University;</span> 
-            <span class="author-affiliation"><sup>4</sup>Beijing Institute for General Artificial Intelligence;</span> 
-            <span class="author-affiliation"><sup>5</sup>Independent Researcher;</span>
+            <span class="author-affiliation"><sup>2</sup>Wuhan University;</span> 
+            <span class="author-affiliation"><sup>3</sup>Beijing Institute for General Artificial Intelligence;</span> 
+            <span class="author-affiliation"><sup>4</sup>Independent Researcher;</span>
           </p>
         </div>
             <div class="publication-links">
@@ -683,7 +681,7 @@
         <div class="container">
             <h2>Abstract</h2>
             <p>
-                AI models capable of comprehending humor hold real-world promise—for example, enhancing engagement in human-machine interactions. To gauge and diagnose the capacity of multimodal large language models (MLLMs) for humor understanding, we introduce v-HUB, a novel visual-centric video humor understanding benchmark. v-HUB comprises a curated collection of minimally verbal short videos, sourced from classic silent films and online resources, and reflecting real-world scenarios where humor can be appreciated purely through visual cues. Each video clip is paired with rich annotations, including captions, descriptions, and explanations, supporting evaluation tasks like caption matching and humor explanation. To broaden its applicability, we further construct an open-ended video QA task, making it readily integrable into existing video understanding benchmarks. We evaluate a diverse set of MLLMs, from specialized Video-LLMs to versatile OmniLLMs that can process audio, covering both open-source and proprietary domains. The experimental results expose the difficulties MLLMs face in comprehending humor from visual cues alone. For example, all models exhibit a marked performance drop on caption matching when moving from text-based to video-based evaluation (without audio). Our findings also demonstrate that incorporating audio helps with video humor understanding, highlighting the informativeness of sound and the promise of integrating richer modalities for complex video understanding tasks.
+              AI models capable of comprehending humor hold real-world promise—for example, enhancing engagement in human-machine interactions. To gauge and diagnose the capacity of multimodal large language models (MLLMs) for humor understanding, we introduce v-HUB, a novel video humor understanding benchmark. v-HUB comprises a curated collection of non-verbal short videos, reflecting real-world scenarios where humor can be appreciated purely through visual cues. We pair each video clip with rich annotations to support a variety of evaluation tasks and analyses, including a novel study of environmental sound that can enhance humor. To broaden its applicability, we construct an open-ended QA task, making v-HUB readily integrable into existing video understanding task suites. We evaluate a diverse set of MLLMs, from specialized Video-LLMs to versatile OmniLLMs that can natively process audio, covering both open-source and proprietary domains. The experimental results expose the difficulties MLLMs face in comprehending humor from visual cues alone. Our findings also demonstrate that incorporating audio helps with video humor understanding, highlighting the promise of integrating richer modalities for complex video understanding tasks.
             </p>
         </div>
     </section>
